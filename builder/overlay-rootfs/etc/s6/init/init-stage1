@@ -7,7 +7,7 @@
 getcwd CWD
 
 importas -D 0 S6_KEEP_ENV S6_KEEP_ENV
-define -s DO_NOT_KEEP_ENV "s6-test ${S6_KEEP_ENV} -eq 0"
+importas -D 0 DO_NOT_KEEP_ENV
 if
 {
   ifelse { ${DO_NOT_KEEP_ENV} }
